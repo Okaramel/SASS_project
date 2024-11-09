@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>SASS Project</title>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="nav">
+            <img class="logo" src="logo.svg" alt="Logo Monito">
+
+            <ul class="nav__list">
+                <li><a class="nav__link" href="">Home</a></li>
+                <li><a class="nav__link" href="">Category</a></li>
+                <li><a class="nav__link" href="">About</a></li>
+                <li><a class="nav__link" href="">Contact</a></li>
+            </ul>
+            <div class="login__search">
+                <div class="search__bar">
+                    <img class="search__icon" src="search.svg" alt="">
+                    <input type="text" placeholder="Search something here!">
+                </div>
+                <button class="login">Login</button>
+            </div>
+        </nav>
+
+    <div class="homepage">
+        <div class="homepage__intro">
+            <h1 class="homepage__intro__element title text">One More Friend</h1>
+            <h2 class="homepage__intro__element title__second text">Thousands More Fun!</h2>
+            <p class="homepage__intro__element subtitle text">Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!</p>
+            <div class="buttons">
+                <button class="homepage__intro__element view">View Intro <img class="circle" src="play.svg" alt=""></button>
+                <button class="homepage__intro__element explore">Explore Now</button>
+            </div>
+        </div>
+        <img class="homepage__img" src="woman-dog.png" alt="" width="500px">
+    </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
 </body>
 </html>

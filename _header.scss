@@ -1,0 +1,144 @@
+@use 'variables';
+@use 'mixins';
+
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+body {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy-Heavy', sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: 'Gilroy-Regular', sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding-top: 15px;
+    margin: 10px;
+    background-color: variables.$secondarycolor;
+}
+
+.logo {
+    width: 6rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav__list {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+
+    .nav__link {
+        text-decoration: none;
+        color: variables.$textcolor;
+    }  
+}
+
+.login__search {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.search__bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 15px;
+    width: 15rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search__bar input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: variables.$searchtextcolor;
+    background: none;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.login {
+    background-color: variables.$logincolor;
+    color: variables.$primarycolor;
+    border-radius: 25px;
+    padding: 15px;
+    width: 10rem;
+    border: none;
+    outline: none;
+}
+
+.homepage {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.homepage__intro__element {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.title__second {
+    margin-top: 0;
+    font-size: 2rem;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.subtitle {
+    font-size: smaller;
+    width: 35rem;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.text {
+    color: variables.$textcolor;
+}
+
+.view {
+    font-family: 'Gilroy-Regular', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid variables.$textcolor;
+    border-radius: 25px;
+    background-color: transparent;
+    color: variables.$textcolor;
+    font-size: 16px;
+}
+
+.circle {
+    width: 20px;
+    margin-left: 5px;
+    border: 2px solid variables.$textcolor;
+    border-radius: 100%;
+}
+
+.explore {
+    font-family: 'Gilroy-Regular', sans-serif;
+    padding: 15px;
+    width: 10rem;
+    background-color: variables.$textcolor;
+    color: variables.$primarycolor;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
