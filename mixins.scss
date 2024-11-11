@@ -1,0 +1,8 @@
+@mixin card {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 250px;
+    border-radius: 15px;
+}

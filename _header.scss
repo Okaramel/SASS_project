@@ -3,14 +3,6 @@
 
 @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
 
-body {
-    font-family: 'Gilroy-Bold', sans-serif;
-    font-family: 'Gilroy-Heavy', sans-serif;
-    font-family: 'Gilroy-Light', sans-serif;
-    font-family: 'Gilroy-Medium', sans-serif;
-    font-family: 'Gilroy-Regular', sans-serif;
-    margin: 0;
-}
 
 .header {
     padding-top: 15px;
@@ -30,40 +22,15 @@ body {
 
 .nav__list {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     gap: 50px;
-
-    .nav__link {
-        text-decoration: none;
-        color: variables.$textcolor;
-    }  
 }
 
-.login__search {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.search__bar {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 25px;
-    padding: 10px 15px;
-    width: 15rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.search__bar input[type="text"] {
-    border: none;
-    outline: none;
-    font-size: 16px;
-    color: variables.$searchtextcolor;
-    background: none;
-    width: 100%;
-    font-family: Arial, sans-serif;
-}
+.nav__element {
+    text-decoration: none;
+    color: variables.$textcolor;
+}  
 
 .login {
     background-color: variables.$logincolor;
@@ -75,15 +42,42 @@ body {
     outline: none;
 }
 
+.login__search {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.search__bar {
+    display: flex;
+    align-items: center;
+    background-color: variables.$primarycolor;
+    border-radius: 25px;
+    padding: 10px 15px;
+    width: 15rem;
+    box-shadow: 0 2px 4px variables.$basictext(0, 0, 0, 0.1);
+}
+
+.search__bar input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: variables.$textcolorgrey;
+    background: none;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
 .homepage {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-}
+    background-color: variables.$secondarycolor;
 
-.homepage__intro__element {
-    display: flex;
-    justify-content: center;
+    .homepage__intro__element {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .title {
@@ -125,13 +119,6 @@ body {
     font-size: 16px;
 }
 
-.circle {
-    width: 20px;
-    margin-left: 5px;
-    border: 2px solid variables.$textcolor;
-    border-radius: 100%;
-}
-
 .explore {
     font-family: 'Gilroy-Regular', sans-serif;
     padding: 15px;
@@ -141,4 +128,11 @@ body {
     border: none;
     border-radius: 25px;
     font-size: 16px;
+}
+
+.circle {
+    width: 20px;
+    margin-left: 5px;
+    border: 2px solid variables.$textcolor;
+    border-radius: 100%;
 }
